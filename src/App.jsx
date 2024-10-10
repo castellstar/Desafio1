@@ -7,7 +7,7 @@ export default function App() {
   const projects = [
     {
       name: "SalveDrew",
-      image: "images/logo.png",  // Logo usando a URL
+      image: "images/logo.png",
       link: "https://ephemeral-longma-a5672b.netlify.app",
     },
   ];
@@ -86,7 +86,7 @@ export default function App() {
             {projects.map(project => (
               <div key={project.name} className="project" onClick={() => handleProjectClick(project)}>
                 <img
-                  src={project.image}  // URL da imagem
+                  src={project.image}
                   alt={project.name}
                   style={{ width: '150px', cursor: 'pointer' }}
                 />
@@ -98,7 +98,7 @@ export default function App() {
 
       <div className="user-image">
         <img
-          src="images/minhafoto.jpg"  // URL da foto de perfil
+          src="images/minhafoto.jpg"
           alt="Foto de Thiago"
           className="profile-pic"
         />
